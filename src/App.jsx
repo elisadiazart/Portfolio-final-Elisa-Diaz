@@ -1,5 +1,7 @@
+import BodyContainer from "./components/body-container/BodyContainer";
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return <BodyContainer/>;
 };
 
 export default App;
