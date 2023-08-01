@@ -1,7 +1,13 @@
+import Header from '../header/Header';
+import Main from '../main/Main';
+
 const BodyContainer = () => {
-    return <div>
-        hola
-    </div>
-}
+	return (
+		<div>
+			<Header />
+			<Main />
+		</div>
+	);
+};
 
 export default BodyContainer;

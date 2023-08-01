@@ -22,6 +22,9 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  li{
+    text-decoration: none;
+  }
   ul{
     list-style: none;
     margin-top: 0;
