@@ -22,7 +22,6 @@ const StyledMenuIcon = styled.img`
 
 const StyledUl = styled.ul`
 	background-color: ${COLORS.limaGreen};
-	list-style: none;
 	margin: 0;
 	top: 0;
 	left: 0;
@@ -63,7 +62,6 @@ const StyledLi = styled.li`
 
 const StyledA = styled.a`
 	color: ${COLORS.blackBG};
-	text-decoration: none;
 	font-family: 'Inter', sans-serif;
 	font-size: 14px;
 	font-weight: 600;

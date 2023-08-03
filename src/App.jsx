@@ -1,7 +1,13 @@
-import BodyContainer from "./components/body-container/BodyContainer";
+import BodyContainer from './components/body-container/BodyContainer';
+import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
-	return <BodyContainer/>;
+	return (
+		<>
+			<GlobalStyles />
+			<BodyContainer />
+		</>
+	);
 };
 
 export default App;

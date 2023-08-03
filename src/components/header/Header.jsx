@@ -17,7 +17,7 @@ const Header = () => {
 				<StyledMenuIconContainer onClick={() => setOpen(!open)}>
 					<StyledMenuIcon
 						src={open ? '/images/close-icon.svg' : '/images/open-icon.svg'}
-						alt=''
+						alt='Menu Icon'
 						rotate={open ? '45deg' : '0'}
 					/>
 				</StyledMenuIconContainer>
