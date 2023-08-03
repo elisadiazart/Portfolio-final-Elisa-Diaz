@@ -10,13 +10,14 @@ const StyledNav = styled.nav`
 	display: flex;
 	justify-content: flex-end;
 	position: absolute;
+	overflow: hidden;
 `;
 
 const StyledMenuIcon = styled.img`
 	width: 35px;
 	height: 35px;
-	filter: grayscale(100%) brightness(0);
-	transform: rotate(45deg);
+	transform: rotate(${({ rotate }) => rotate});
+	transition: transform 0.2s;
 `;
 
 const StyledUl = styled.ul`
@@ -32,6 +33,8 @@ const StyledUl = styled.ul`
 	justify-content: center;
 	gap: 2rem;
 	z-index: 0;
+	transform: translate(${({ translate }) => translate});
+	transition: transform 0.2s;
 `;
 
 const StyledMenuIconContainer = styled.div`
@@ -39,6 +42,18 @@ const StyledMenuIconContainer = styled.div`
 	z-index: 100;
 	padding-right: 3rem;
 	padding-top: 30px;
+
+	&::after {
+		content: 'Menu';
+		color: ${COLORS.limaGreen};
+		position: absolute;
+		bottom: -1.2rem;
+		right: calc(50% + 0.2rem);
+		text-transform: uppercase;
+		font-family: 'Inter', sans-serif;
+		font-size: 14px;
+		font-weight: 500;
+	}
 `;
 
 const StyledLi = styled.li`

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
 	StyledHeader,
 	StyledMenuIcon,
@@ -9,13 +10,18 @@ import {
 } from './styles';
 
 const Header = () => {
+	const [open, setOpen] = useState(false);
 	return (
 		<StyledHeader>
 			<StyledNav>
-				<StyledMenuIconContainer>
-					<StyledMenuIcon src='/images/open-icon.svg' alt='' />
+				<StyledMenuIconContainer onClick={() => setOpen(!open)}>
+					<StyledMenuIcon
+						src={open ? '/images/close-icon.svg' : '/images/open-icon.svg'}
+						alt=''
+						rotate={open ? '45deg' : '0'}
+					/>
 				</StyledMenuIconContainer>
-				<StyledUl>
+				<StyledUl translate={open ? '0' : '100vw'}>
 					<StyledLi>
 						<StyledA href=''>Home</StyledA>
 					</StyledLi>

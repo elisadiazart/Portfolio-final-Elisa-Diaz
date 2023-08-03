@@ -4,17 +4,17 @@ import { COLORS } from '../../constants/colors';
 const StyledMain = styled.main`
 	background-color: ${COLORS.blackBG};
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
+	width: 100vw;
 	color: ${COLORS.white};
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 const StyledImg = styled.img`
 	width: 106px;
 	height: 108px;
-	margin: 3rem auto;
 	margin-bottom: 0;
-	padding-top: 140px;
 `;
 
 const StyledH1 = styled.h1`
@@ -39,4 +39,24 @@ const StyledText = styled.p`
 	margin: 0 auto;
 `;
 
-export { StyledMain, StyledImg, StyledH1, StyledText };
+const StyledCopy = styled.p`
+	display: block;
+	width: 150px;
+	font-family: 'Inter', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	position: absolute;
+	bottom: 3rem;
+	left: 3.5rem;
+`;
+
+const StyledDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	transform: translateY(-2rem);
+`;
+
+export { StyledMain, StyledImg, StyledH1, StyledText, StyledCopy, StyledDiv };
