@@ -11,6 +11,7 @@ const StyledNav = styled.nav`
 	justify-content: flex-end;
 	position: absolute;
 	overflow: hidden;
+	background-color: ${COLORS.blackBG};
 `;
 
 const StyledMenuIcon = styled.img`
@@ -46,8 +47,8 @@ const StyledMenuIconContainer = styled.div`
 		content: 'Menu';
 		color: ${COLORS.limaGreen};
 		position: absolute;
-		bottom: -1.2rem;
-		right: calc(50% + 0.2rem);
+		bottom: -1.6rem;
+		right: calc(50% + 0.15rem);
 		text-transform: uppercase;
 		font-family: 'Inter', sans-serif;
 		font-size: 14px;
@@ -58,9 +59,6 @@ const StyledMenuIconContainer = styled.div`
 const StyledLi = styled.li`
 	text-transform: uppercase;
 	padding-top: 95px;
-`;
-
-const StyledA = styled.a`
 	color: ${COLORS.blackBG};
 	font-family: 'Inter', sans-serif;
 	font-size: 14px;
@@ -72,7 +70,6 @@ export {
 	StyledMenuIcon,
 	StyledUl,
 	StyledLi,
-	StyledA,
 	StyledNav,
 	StyledMenuIconContainer
 };

@@ -1,11 +1,16 @@
-import BodyContainer from './components/body-container/BodyContainer';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router/Router';
 import { GlobalStyles } from './styles/GlobalStyles';
 
 const App = () => {
+	// const [modal, setModal] = useState(null);
 	return (
 		<>
-			<GlobalStyles />
-			<BodyContainer />
+			<BrowserRouter>
+				<GlobalStyles />
+				{/* <AboutMe setModal={setModal}>{modal}</AboutMe> */}
+				<Router />
+			</BrowserRouter>
 		</>
 	);
 };
