@@ -61,7 +61,7 @@ const StyledLi = styled.li`
 	padding-top: 95px;
 	color: ${COLORS.blackBG};
 	font-family: 'Inter', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 `;
 
