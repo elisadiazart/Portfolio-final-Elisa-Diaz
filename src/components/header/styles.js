@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { styled } from 'styled-components';
 import { COLORS } from '../../constants/colors';
 
@@ -5,7 +6,7 @@ const StyledHeader = styled.header`
 	background-color: ${COLORS.blackBG};
 `;
 
-const StyledNav = styled.nav`
+const StyledNav = styled(motion.nav)`
 	height: 140px;
 	display: flex;
 	justify-content: flex-end;

@@ -12,9 +12,16 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
+	const xvalue = '100vw';
+
 	return (
 		<StyledHeader>
-			<StyledNav>
+			<StyledNav
+				initial={{ x: 0 }}
+				animate={{ x: 0 }}
+				exit={{ x: xvalue, transition: { duration: 0.3 } }}
+				transition={{ delay: 0.4 }}
+			>
 				<StyledMenuIconContainer>
 					<StyledMenuIcon
 						src={open ? '/images/close-icon.svg' : '/images/open-icon.svg'}

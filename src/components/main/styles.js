@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { styled } from 'styled-components';
 import { COLORS } from '../../constants/colors';
 
@@ -39,7 +40,7 @@ const StyledText = styled.p`
 	margin: 0 auto;
 `;
 
-const StyledCopy = styled.p`
+const StyledCopy = styled(motion.p)`
 	display: block;
 	width: 150px;
 	font-family: 'Inter', sans-serif;
@@ -51,7 +52,7 @@ const StyledCopy = styled.p`
 	left: 3.5rem;
 `;
 
-const StyledDiv = styled.div`
+const StyledDiv = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
