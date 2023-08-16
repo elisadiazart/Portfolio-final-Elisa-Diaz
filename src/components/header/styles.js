@@ -12,7 +12,10 @@ const StyledNav = styled(motion.nav)`
 	justify-content: flex-end;
 	position: absolute;
 	overflow: hidden;
-	background-color: ${COLORS.blackBG};
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
+	position: fixed;
+	z-index: 10000;
 `;
 
 const StyledMenuIcon = styled.img`
