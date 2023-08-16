@@ -5,7 +5,7 @@ import { COLORS } from '../../constants/colors';
 const StyledMain = styled.main`
 	background-color: ${COLORS.blackBG};
 	padding: 0 3rem;
-	padding-top: 180px;
+	padding-top: 140px;
 `;
 
 const StyledLi = styled.li`
@@ -46,12 +46,14 @@ const StyledLi = styled.li`
 const StyledUl = styled(motion.ul)`
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid ${COLORS.white};
+	border-bottom: 2px solid ${COLORS.white};
 	margin-bottom: 3rem;
 	background-color: ${COLORS.blackBG};
+	outline: 2px solid ${COLORS.blackBG};
 	position: fixed;
 	padding: 1.5rem 0;
-	width: calc(100vw - 6rem);
+	width: calc(100vw - 6rem + 6px);
+	transform: translateX(-3px);
 `;
 
 const StyledNav = styled.nav`

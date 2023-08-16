@@ -12,8 +12,7 @@ const StyledNav = styled(motion.nav)`
 	justify-content: flex-end;
 	position: absolute;
 	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(4px);
+	background-color: ${COLORS.blackBG};
 	position: fixed;
 	z-index: 10000;
 `;

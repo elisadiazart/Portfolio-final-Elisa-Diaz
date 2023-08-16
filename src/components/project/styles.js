@@ -64,8 +64,8 @@ const StyledText = styled.p`
 `;
 
 const StyledProject = styled.div`
-	padding-bottom: 4rem;
-	padding-top: 2rem;
+	padding-bottom: 3rem;
+	padding-top: 5rem;
 `;
 
 export {
