@@ -5,7 +5,9 @@ import {
 	StyledUl,
 	StyledLi,
 	StyledNav,
-	StyledMenuIconContainer
+	StyledMenuIconContainer,
+	StyledDiv,
+	StyledSmallText
 } from './styles';
 
 import { NavLink } from 'react-router-dom';
@@ -30,22 +32,20 @@ const Header = () => {
 						onClick={() => setOpen(!open)}
 					/>
 				</StyledMenuIconContainer>
-				<StyledUl translate={open ? '0' : '100vw'}>
-					<StyledLi>
-						<NavLink to='/'>Home</NavLink>
-					</StyledLi>
-					<StyledLi>
-						<NavLink to='/projects'>Proyectos</NavLink>
-					</StyledLi>
-					<StyledLi>
-						<NavLink
-							to='/about-me'
-							//  onClick={() => setModal(true)}
-						>
-							Sobre mí
-						</NavLink>
-					</StyledLi>
-				</StyledUl>
+				<StyledDiv>
+					<StyledUl translate={open ? '0' : '100vw'}>
+						<StyledLi>
+							<NavLink to='/'>Home</NavLink>
+						</StyledLi>
+						<StyledLi>
+							<NavLink to='/projects'>Proyectos</NavLink>
+						</StyledLi>
+						<StyledLi>
+							<NavLink to='/about-me'>Sobre mí</NavLink>
+						</StyledLi>
+					</StyledUl>
+					<StyledSmallText>©2023 TODOS LOS DERECHOS RESERVADOS</StyledSmallText>
+				</StyledDiv>
 			</StyledNav>
 		</StyledHeader>
 	);

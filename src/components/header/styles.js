@@ -5,6 +5,8 @@ import { COLORS } from '../../constants/colors';
 const StyledHeader = styled.header`
 	background-color: ${COLORS.blackBG};
 	@media screen and (min-width: 1024px) {
+		position: fixed;
+		width: 100%;
 	}
 `;
 
@@ -49,6 +51,8 @@ const StyledUl = styled.ul`
 		transform: translate(0);
 		background-color: ${COLORS.blackBG};
 		justify-content: left;
+		height: auto;
+		width: 100%;
 	}
 `;
 
@@ -88,12 +92,13 @@ const StyledLi = styled.li`
 		font-size: 14px;
 		font-weight: 400;
 		position: relative;
+		padding-top: 0;
 		&::after {
 			content: '';
 			width: 100%;
 			height: 5px;
 			position: absolute;
-			bottom: 18px;
+			bottom: -0.5rem;
 			background-color: ${COLORS.limaGreen};
 			left: 0;
 			transform: scale(0, 100%);
@@ -108,11 +113,37 @@ const StyledLi = styled.li`
 	}
 `;
 
+const StyledDiv = styled.div`
+	width: 100%;
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		align-items: flex-start;
+		padding-top: 5rem;
+		color: ${COLORS.blackBG};
+	}
+`;
+
+const StyledSmallText = styled.p`
+	display: none;
+	@media screen and (min-width: 1024px) {
+		display: block;
+		width: 220px;
+		font-family: 'Inter', sans-serif;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 400;
+		color: white;
+		text-align: right;
+	}
+`;
+
 export {
 	StyledHeader,
 	StyledMenuIcon,
 	StyledUl,
 	StyledLi,
 	StyledNav,
-	StyledMenuIconContainer
+	StyledMenuIconContainer,
+	StyledDiv,
+	StyledSmallText
 };

@@ -4,7 +4,8 @@ import {
 	StyledH1,
 	StyledText,
 	StyledCopy,
-	StyledDiv
+	StyledDiv,
+	StyledFlowers
 } from './styles';
 
 const Main = () => {
@@ -17,10 +18,16 @@ const Main = () => {
 				transition={{ delay: 0.4, duration: 0.6 }}
 			>
 				<StyledImg src='/images/profile-pic.png' alt='Imagen de perfil.' />
-				<StyledH1>Elisa Díaz</StyledH1>
-				<StyledText>
-					Front-end developer, ui designer, graphic designer.
-				</StyledText>
+				<div>
+					<StyledH1>Elisa Díaz</StyledH1>
+					<StyledText>
+						Front-end developer, ui designer, graphic designer.
+					</StyledText>
+				</div>
+				<StyledFlowers>
+					<img src='/public/images/flower.svg' alt='' />
+					<img src='/public/images/flower.svg' alt='' />
+				</StyledFlowers>
 			</StyledDiv>
 			<StyledCopy
 				initial={{ opacity: 0 }}
